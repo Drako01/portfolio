@@ -1,0 +1,24 @@
+/* Variables de Footer */
+$primary: var(--first);
+$secondary: var(--second);
+$col: 24;
+$colors: 
+    primary #448,
+    secondary #c36,
+    light #eee,
+    dark #333,
+    success  #3c6,
+    warning #da3,
+    danger  #c33,
+    info #36c;
+$attributes: 
+    text color,
+    bg background-color,
+    border border-color,
+    shadow --shadow,
+    shade --shade;
+$pathImg: '../img';
+
+footer{
+    background-color: $primary;
+}
