@@ -106,11 +106,11 @@ body.open .sidebar {
   height: 72px;
   display: grid;
   place-items: center;
-  background: url(../assets/icon-burger.svg) no-repeat center center;
+  background: url(../img/icon-burger.svg) no-repeat center center;
 }
 
 body.open .sidebar-burger {
-  background: url(../assets/icon-close.svg) no-repeat no-repeat center center;
+  background: url(../img/icon-close.svg) no-repeat no-repeat center center;
 }
 
 .sidebar-logo {
