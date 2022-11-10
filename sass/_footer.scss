@@ -1,9 +1,10 @@
-/* Variables de Footer */
+// Variables de Footer
 $primary: var(--first);
 $secondary: var(--second);
 $tertiary: var(--light);
 $fourth: var(--dark);
 
+/* Inicio del Footer */
 footer{
     background-color: $primary;
     position: sticky;
@@ -13,7 +14,7 @@ footer{
     justify-content: center;
     padding: .5rem;
     h3{
-        text-shadow: 2px 2px 5px $fourth;
+        text-shadow: .15rem .15rem .5rem $fourth;
     }
     h3,
     p {
