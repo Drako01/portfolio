@@ -1,12 +1,14 @@
+
 .sidebar {
-    position: absolute;
+    position:fixed;
     overflow: hidden;
     top: 0;
     left: 0;
     width: 72px;
     height: 100%;
     background: #1083db;
-    transition: width 0.4s;
+    transition: width 0.4s ease-in-out;
+    z-index: 2;
 }
 
 body.open .sidebar {

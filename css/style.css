@@ -2,7 +2,7 @@
 /* Variables */
 :root {
   /* Colores */
-  --first: #124;
+  --first: #1083db;
   --second: #248;
   --light: #eee;
   --dark: #333;
@@ -71,15 +71,25 @@ button {
   cursor: pointer;
 }
 
+main {
+  padding: 20px;
+}
+
+main,
+footer {
+  margin-left: 72px;
+}
+
 .sidebar {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   top: 0;
   left: 0;
   width: 72px;
   height: 100%;
   background: #1083db;
-  transition: width 0.4s;
+  transition: width 0.4s ease-in-out;
+  z-index: 2;
 }
 
 body.open .sidebar {
@@ -152,6 +162,20 @@ body.open .sidebar-burger {
 /* Variables de Footer */
 footer {
   background-color: var(--first);
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+footer h3 {
+  text-shadow: 2px 2px 5px var(--dark);
+}
+footer h3,
+footer p {
+  color: var(--light);
+  margin-bottom: 0;
 }
 
 /* 2022 - Autor: Alejandro Daniel Di Stefano *//*# sourceMappingURL=style.css.map */

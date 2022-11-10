@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     /* Colores */
-    --first: #124;
+    --first: #1083db;
     --second: #248;
     --light: #eee;
     --dark: #333;
@@ -68,3 +68,13 @@ button {
     padding: 0;
     cursor: pointer;
 }
+main{
+    padding:20px;
+}
+main,
+footer{
+    margin-left: 72px;
+}
+
+
+$pathImg: '../img';
