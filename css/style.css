@@ -64,17 +64,6 @@ footer) a {
   list-style: none;
 }
 
-button {
-  background: transparent;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-.sidebar-menu > button:hover {
-  background-color: #333;
-}
-
 main {
   padding: 20px;
 }
@@ -135,7 +124,7 @@ body.open .sidebar-burger {
   display: grid;
 }
 
-.sidebar-menu > button {
+.sidebar-menu > a > button {
   display: flex;
   gap: 25px;
   align-items: center;
@@ -148,17 +137,29 @@ body.open .sidebar-burger {
   padding: 0 25px;
 }
 
-.sidebar-menu > button.has-border {
+.sidebar-menu > a > button.has-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.sidebar-menu > button > img {
+.sidebar-menu > a > button > img {
   width: 24px;
   height: 24px;
 }
 
-.sidebar-menu > button > span {
+.sidebar-menu > a > button > span {
   color: #f9f9f9;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar-menu > a > button:hover {
+  background-color: #333;
+  width: 100%;
 }
 
 /* Variables de Footer */
