@@ -71,6 +71,10 @@ button {
   cursor: pointer;
 }
 
+.sidebar-menu > button:hover {
+  background-color: #333;
+}
+
 main {
   padding: 20px;
 }
@@ -145,9 +149,7 @@ body.open .sidebar-burger {
 }
 
 .sidebar-menu > button.has-border {
-  padding-bottom: 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  margin-bottom: 1rem;
 }
 
 .sidebar-menu > button > img {
