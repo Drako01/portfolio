@@ -185,5 +185,8 @@ footer p {
   color: var(--light);
   margin-bottom: 0;
 }
+footer .copy {
+  text-align: center;
+}
 
 /* 2022 - Autor: Alejandro Daniel Di Stefano *//*# sourceMappingURL=style.css.map */
