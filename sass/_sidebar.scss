@@ -7,6 +7,7 @@ $fourth: var(--dark);
 $line: var(--line);
 $extras: var(--extras);
 $bg-nav: var(--bg-nav);
+$hover-nav: var(--hover-nav);
 
 .sidebar {
     position:fixed;
@@ -15,7 +16,7 @@ $bg-nav: var(--bg-nav);
     left: 0;
     width: 72px;
     height: 100%;
-    background: $primary;
+    background: $fourth;
     transition: width 0.4s ease-in-out;
     z-index: 2;
 }
@@ -92,6 +93,6 @@ button {
     cursor: pointer;
 }
 .sidebar-menu > a> button:hover{
-    background-color: $fourth;
+    background-color: $hover-nav;
     width: 100%;
 }

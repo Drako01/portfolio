@@ -9,6 +9,7 @@
   --line:#ffffff1f;
   --extras: #f9f9f9;
   --bg-nav: #0000001a;
+  --hover-nav:#272525;
   /* Tamaños */
   --small: 200px;
   --medium: 400px;
@@ -36,6 +37,10 @@ header p,
 .subitems,
 .menu {
   margin: 0;
+}
+
+body {
+  background-color: var(--dark);
 }
 
 /* Rellenos */
@@ -68,7 +73,7 @@ footer) a {
 }
 
 main {
-  padding: 20px;
+  padding: auto;
 }
 
 main,
@@ -84,7 +89,7 @@ footer {
   left: 0;
   width: 72px;
   height: 100%;
-  background: var(--first);
+  background: var(--dark);
   transition: width 0.4s ease-in-out;
   z-index: 2;
 }
@@ -163,13 +168,13 @@ button {
 }
 
 .sidebar-menu > a > button:hover {
-  background-color: var(--dark);
+  background-color: var(--hover-nav);
   width: 100%;
 }
 
 /* Inicio del Footer */
 footer {
-  background-color: var(--first);
+  background-color: var(--dark);
   position: sticky;
   bottom: 0;
   display: flex;
@@ -187,6 +192,21 @@ footer p {
 }
 footer .copy {
   text-align: center;
+}
+
+.video-init video {
+  max-width: 100%;
+}
+.video-init img {
+  max-width: var(--large);
+  padding: 1.5rem 0;
+}
+
+.df-col-cter, .video-init {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 2022 - Autor: Alejandro Daniel Di Stefano *//*# sourceMappingURL=style.css.map */

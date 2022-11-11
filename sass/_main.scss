@@ -1,0 +1,13 @@
+.video-init {
+    @extend .df-col-cter;
+
+    video {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: var(--large);
+        padding: 1.5rem 0;
+    }
+
+}

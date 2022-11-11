@@ -8,6 +8,7 @@
     --line:#ffffff1f;
     --extras: #f9f9f9;
     --bg-nav: #0000001a;
+    --hover-nav:#272525;
     /* Tamaños */
     --small: 200px;
     --medium: 400px;
@@ -36,7 +37,9 @@ header p,
 .menu {
     margin: 0;
 }
-
+body{
+    background-color: var(--dark);
+}
 /* Rellenos */
 .submenu,
 .subitems,
@@ -67,7 +70,7 @@ iframe {
 
 
 main{
-    padding:20px;
+    padding: auto;
 }
 main,
 footer{
