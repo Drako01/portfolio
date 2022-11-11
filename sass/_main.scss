@@ -11,3 +11,12 @@
     }
 
 }
+.cards{
+    background: var(--grey);
+    padding: var(--small);
+    h1{       
+        font-size: 2rem;
+        color: var(--light);
+        text-align: center;
+    }
+}
