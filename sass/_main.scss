@@ -14,9 +14,13 @@
 .cards{
     background: var(--grey);
     padding: var(--small);
-    h1{       
+    h2{       
         font-size: 2rem;
         color: var(--light);
         text-align: center;
     }
+}
+.oculto{
+    max-height: 0;
+    overflow: hidden;
 }
