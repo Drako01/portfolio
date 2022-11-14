@@ -83,7 +83,11 @@ footer {
   margin-left: 72px;
 }
 
-.jc-row-ctr, .atras, .wrap {
+.space {
+  margin: 100px;
+}
+
+.jc-row-ctr, .wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -96,6 +100,20 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.jc-col-left, .atras {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.df-row-ev, .atras .iconos-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto 0;
 }
 
 .wrap {
@@ -144,8 +162,17 @@ footer {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   padding: 15px;
-  text-align: center;
+  margin-top: 2rem;
   color: var(--light);
+}
+.atras a {
+  text-decoration: none;
+  color: var(--light);
+}
+.atras :is(.text-decoration) li {
+  list-style: circle;
+  font-size: 0.9rem;
+  color: rgb(255, 247, 0);
 }
 
 .tarjeta-wrap:hover .tarjeta {
@@ -154,7 +181,7 @@ footer {
 }
 
 .card1 {
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/1.jpeg);
   background-size: cover;
 }
 
@@ -170,6 +197,26 @@ footer {
 
 .card4 {
   background-image: url(../img/4.jpg);
+  background-size: cover;
+}
+
+.card5 {
+  background-image: url(../img/5.png);
+  background-size: cover;
+}
+
+.card6 {
+  background-image: url(../img/6.jpg);
+  background-size: cover;
+}
+
+.card7 {
+  background-image: url(../img/7.png);
+  background-size: cover;
+}
+
+.card8 {
+  background-image: url(../img/8.png);
   background-size: cover;
 }
 
@@ -284,6 +331,10 @@ footer p {
 }
 footer .copy {
   text-align: center;
+}
+footer .copy a {
+  text-decoration: none;
+  color: var(--light);
 }
 
 .video-init video {

@@ -12,7 +12,18 @@
 	-ms-flex-align: center;
 	align-items: center;
 }
-
+.jc-col-left{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+.df-row-ev{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: auto 0;
+}
 .wrap{
 	width: 100%;
 	margin: 1rem auto;
@@ -60,9 +71,21 @@
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 	padding: 15px;
-	@extend .jc-row-ctr;
-	text-align: center;
+	margin-top: 2rem;
+	@extend .jc-col-left;	
 	color: var(--light);
+	a{
+		text-decoration: none;
+		color: var(--light);
+	}
+	.iconos-card{
+		@extend .df-row-ev;
+	}
+	:is(.text-decoration) li {
+		list-style:circle;
+		font-size: .9rem;
+		color: rgb(255, 247, 0);
+	}
 }
 
 .tarjeta-wrap:hover .tarjeta{
@@ -71,7 +94,7 @@
 }
 
 .card1{
-	background-image: url(../img/1.jpg);
+	background-image: url(../img/1.jpeg);
 	background-size: cover;
 }
 
@@ -87,5 +110,25 @@
 
 .card4{
 	background-image: url(../img/4.jpg);
+	background-size: cover;
+}
+
+.card5{
+	background-image: url(../img/5.png);
+	background-size: cover;
+}
+
+.card6{
+	background-image: url(../img/6.jpg);
+	background-size: cover;
+}
+
+.card7{
+	background-image: url(../img/7.png);
+	background-size: cover;
+}
+
+.card8{
+	background-image: url(../img/8.png);
 	background-size: cover;
 }

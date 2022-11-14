@@ -23,5 +23,10 @@ footer{
     }
     .copy{
         text-align: center;
+        a{
+            text-decoration: none;
+            color: $tertiary;
+        }
+        
     } 
 }
