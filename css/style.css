@@ -87,7 +87,7 @@ footer {
   margin: 100px;
 }
 
-.jc-row-ctr, .wrap {
+.jc-row-ctr, .cards .wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -102,33 +102,41 @@ footer {
   align-items: center;
 }
 
-.jc-col-left, .atras {
+.jc-col-left, .cards .wrap .tarjeta-wrap .tarjeta .atras, .cards .wrap .tarjeta-wrap .tarjeta .atras-v, .cards .wrap .tarjeta-wrap .tarjeta-v .atras, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
 }
 
-.df-row-ev, .atras .iconos-card {
+.df-row-ev, .cards .wrap .tarjeta-wrap .tarjeta .atras .iconos-card, .cards .wrap .tarjeta-wrap .tarjeta .atras-v .iconos-card, .cards .wrap .tarjeta-wrap .tarjeta-v .atras .iconos-card, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v .iconos-card {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin: auto 0;
 }
 
-.wrap {
+.rotateY, .tarjeta-wrap:hover .tarjeta, .cards .wrap .tarjeta-wrap .tarjeta .atras, .cards .wrap .tarjeta-wrap .tarjeta .atras-v, .cards .wrap .tarjeta-wrap .tarjeta-v .atras, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.rotateX, .tarjeta-wrap:hover .tarjeta-v, .cards .wrap .tarjeta-wrap .tarjeta .atras-v, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.cards .wrap {
   width: 100%;
   margin: 1rem auto;
   flex-wrap: wrap;
 }
-
-.tarjeta-wrap {
+.cards .wrap .tarjeta-wrap {
   margin: 10px;
   -webkit-perspective: 800;
   perspective: 800;
 }
-
-.tarjeta {
+.cards .wrap .tarjeta-wrap .tarjeta, .cards .wrap .tarjeta-wrap .tarjeta-v {
   width: 300px;
   height: 350px;
   background: var(--dark);
@@ -142,8 +150,7 @@ footer {
   border-radius: 0.75rem;
   cursor: pointer;
 }
-
-.adelante, .atras {
+.cards .wrap .tarjeta-wrap .tarjeta .adelante, .cards .wrap .tarjeta-wrap .tarjeta .atras, .cards .wrap .tarjeta-wrap .tarjeta .atras-v, .cards .wrap .tarjeta-wrap .tarjeta-v .adelante, .cards .wrap .tarjeta-wrap .tarjeta-v .atras, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -152,34 +159,24 @@ footer {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 0.75rem;
+  padding: 1rem;
 }
-
-.adelante {
+.cards .wrap .tarjeta-wrap .tarjeta .adelante, .cards .wrap .tarjeta-wrap .tarjeta-v .adelante {
   width: 100%;
 }
-
-.atras {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+.cards .wrap .tarjeta-wrap .tarjeta .atras, .cards .wrap .tarjeta-wrap .tarjeta .atras-v, .cards .wrap .tarjeta-wrap .tarjeta-v .atras, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v {
   padding: 15px;
-  margin-top: 2rem;
   color: var(--light);
 }
-.atras a {
+.cards .wrap .tarjeta-wrap .tarjeta .atras a, .cards .wrap .tarjeta-wrap .tarjeta .atras-v a, .cards .wrap .tarjeta-wrap .tarjeta-v .atras a, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v a {
   text-decoration: none;
   color: var(--light);
 }
-.atras :is(.text-decoration) li {
+.cards .wrap .tarjeta-wrap .tarjeta .atras :is(.text-decoration) li, .cards .wrap .tarjeta-wrap .tarjeta .atras-v :is(.text-decoration) li, .cards .wrap .tarjeta-wrap .tarjeta-v .atras :is(.text-decoration) li, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v :is(.text-decoration) li {
   list-style: circle;
   font-size: 0.9rem;
   color: rgb(255, 247, 0);
 }
-
-.tarjeta-wrap:hover .tarjeta {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
 .card1 {
   background-image: url(../img/1.jpeg);
   background-size: cover;
