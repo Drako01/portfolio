@@ -1,19 +1,28 @@
-@media screen  and (max-width: 768px){
-    .video-init {       
-        
-        video{
+@media screen and (max-width: 768px) {
+    .video-init {
+
+        video {
             height: 80vh;
             object-fit: cover;
         }
     }
-    .proyects{    
-        padding: var(--small) 0;    
-        img{
+
+    .proyects {
+        padding: var(--small) 0;
+
+        img {
             max-width: var(--small-p);
         }
     }
-    .copy{
+
+    .copy {
         font-size: .6rem;
         margin: 1rem 0;
+    }
+
+    .cards .wrap .tarjeta-wrap .tarjeta,
+    .cards .wrap .tarjeta-wrap .tarjeta-v {
+        width: 270px;
+        height: 350px;
     }
 }

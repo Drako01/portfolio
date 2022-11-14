@@ -391,6 +391,11 @@ footer .copy a {
     font-size: 0.6rem;
     margin: 1rem 0;
   }
+  .cards .wrap .tarjeta-wrap .tarjeta,
+.cards .wrap .tarjeta-wrap .tarjeta-v {
+    width: 270px;
+    height: 350px;
+  }
 }
 .df-col-cter, .video-init {
   display: flex;
