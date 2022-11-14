@@ -35,6 +35,15 @@
 }
 
 .cards{
+    background: var(--grey);
+    padding: var(--xsmall) 0;
+    h2{       
+        font-size: 2.5rem;
+        color: var(--light);
+        text-align: center;
+		text-shadow: -.25rem .25rem .5rem var(--dark);
+    }
+
 	.wrap{
 		width: 100%;
 		margin: 1rem auto;
@@ -89,7 +98,9 @@
 					:is(.text-decoration) li {
 						list-style:circle;
 						font-size: .9rem;
-						color: rgb(255, 247, 0);
+					}
+					h3{
+						color: burlywood;
 					}
 				}
 				

@@ -13,9 +13,11 @@
   --shadow: #000000a6;
   --grey: #6e6e6e;
   /* Tamaños */
+  --xsmall: 100px;
   --small: 200px;
   --medium: 400px;
   --large: 600px;
+  --xlarge: 800px;
   /* Tipografia */
   --font: "Roboto", "Raleway", sans-serif;
 }
@@ -126,6 +128,16 @@ footer {
   transform: rotateX(180deg);
 }
 
+.cards {
+  background: var(--grey);
+  padding: var(--xsmall) 0;
+}
+.cards h2 {
+  font-size: 2.5rem;
+  color: var(--light);
+  text-align: center;
+  text-shadow: -0.25rem 0.25rem 0.5rem var(--dark);
+}
 .cards .wrap {
   width: 100%;
   margin: 1rem auto;
@@ -175,7 +187,9 @@ footer {
 .cards .wrap .tarjeta-wrap .tarjeta .atras :is(.text-decoration) li, .cards .wrap .tarjeta-wrap .tarjeta .atras-v :is(.text-decoration) li, .cards .wrap .tarjeta-wrap .tarjeta-v .atras :is(.text-decoration) li, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v :is(.text-decoration) li {
   list-style: circle;
   font-size: 0.9rem;
-  color: rgb(255, 247, 0);
+}
+.cards .wrap .tarjeta-wrap .tarjeta .atras h3, .cards .wrap .tarjeta-wrap .tarjeta .atras-v h3, .cards .wrap .tarjeta-wrap .tarjeta-v .atras h3, .cards .wrap .tarjeta-wrap .tarjeta-v .atras-v h3 {
+  color: burlywood;
 }
 .card1 {
   background-image: url(../img/1.jpeg);
@@ -334,6 +348,12 @@ footer .copy a {
   color: var(--light);
 }
 
+.df-row-ctr, .proyects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .video-init video {
   max-width: 100%;
 }
@@ -342,19 +362,17 @@ footer .copy a {
   padding: 1.5rem 0;
 }
 
-.cards {
-  background: var(--grey);
-  padding: var(--small);
-}
-.cards h2 {
-  font-size: 2rem;
-  color: var(--light);
-  text-align: center;
-}
-
 .oculto {
   max-height: 0;
   overflow: hidden;
+}
+
+.proyects {
+  background-color: white;
+  padding: var(--small);
+}
+.proyects img {
+  max-width: var(--xlarge);
 }
 
 .df-col-cter, .video-init {

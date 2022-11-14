@@ -1,3 +1,8 @@
+.df-row-ctr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
 .video-init {
     @extend .df-col-cter;
 
@@ -11,16 +16,17 @@
     }
 
 }
-.cards{
-    background: var(--grey);
-    padding: var(--small);
-    h2{       
-        font-size: 2rem;
-        color: var(--light);
-        text-align: center;
-    }
-}
+
 .oculto{
     max-height: 0;
     overflow: hidden;
+}
+
+.proyects{
+    background-color: white;
+    @extend .df-row-ctr;
+    padding: var(--small);
+    img{
+        max-width: var(--xlarge);
+    }
 }
