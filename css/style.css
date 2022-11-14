@@ -15,6 +15,7 @@
   /* Tamaños */
   --xsmall: 100px;
   --small: 200px;
+  --small-p: 300px;
   --medium: 400px;
   --large: 600px;
   --xlarge: 800px;
@@ -384,7 +385,7 @@ footer .copy a {
     padding: var(--small) 0;
   }
   .proyects img {
-    max-width: var(--small);
+    max-width: var(--small-p);
   }
   .copy {
     font-size: 0.6rem;
