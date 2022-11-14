@@ -1,0 +1,19 @@
+@media screen  and (max-width: 768px){
+    .video-init {       
+        
+        video{
+            height: 80vh;
+            object-fit: cover;
+        }
+    }
+    .proyects{    
+        padding: var(--small) 0;    
+        img{
+            max-width: var(--small);
+        }
+    }
+    .copy{
+        font-size: .6rem;
+        margin: 1rem 0;
+    }
+}

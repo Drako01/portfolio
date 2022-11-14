@@ -375,6 +375,22 @@ footer .copy a {
   max-width: var(--xlarge);
 }
 
+@media screen and (max-width: 768px) {
+  .video-init video {
+    height: 80vh;
+    object-fit: cover;
+  }
+  .proyects {
+    padding: var(--small) 0;
+  }
+  .proyects img {
+    max-width: var(--small);
+  }
+  .copy {
+    font-size: 0.6rem;
+    margin: 1rem 0;
+  }
+}
 .df-col-cter, .video-init {
   display: flex;
   flex-direction: column;
