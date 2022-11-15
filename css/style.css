@@ -27,7 +27,6 @@
 * {
   font-family: var(--font);
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 /* Reinicios de Estilos */
@@ -331,7 +330,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 footer h3 {
   text-shadow: 0.15rem 0.15rem 0.5rem var(--dark);
