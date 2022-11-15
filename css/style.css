@@ -375,6 +375,11 @@ footer .copy a {
   max-width: var(--xlarge);
 }
 
+.contador {
+  text-align: center;
+  color: var(--light);
+}
+
 @media screen and (max-width: 768px) {
   .video-init video {
     height: 80vh;
